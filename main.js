@@ -1,5 +1,3 @@
-import './style.css'
-import './src/index.js'
 document.querySelector('#app').innerHTML = `
   <h1 class="title">Wave Audio Path Player</h1>
   <h3 class="title">Webcomponent</h3>
