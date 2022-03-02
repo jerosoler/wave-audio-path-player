@@ -1,0 +1,102 @@
+*, :after, :before { 
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin:auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+p {
+ margin-top: 3px;
+ margin-bottom: 3px;
+}
+h3.title  {
+  margin-top: 0px;
+  font-size: 20px;
+}
+footer {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+wave-audio-path-player {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* DEMO 1*/
+#demo1::part(player) {
+  background:rgb(0, 0, 0);
+  padding: 15px 0px;
+  border-radius: 20px;
+  border:1px solid black;
+}
+
+#demo1::part(button) {
+  stroke: white;
+  fill:white;
+}
+
+#demo1::part(currenttime), #demo1::part(duration) {
+  color:white;
+  font-weight: bold;
+}
+
+#demo1::part(path1) {
+  stroke: white;
+}
+
+#demo1::part(path2) {
+  stroke:fuchsia;
+}
+
+/* DEMO 2*/
+#demo2::part(player) {
+  background:rgb(187, 187, 187);
+  padding: 15px 15px;
+  border-radius: 40px;
+  border:1px solid rgb(122, 121, 121);
+}
+
+#demo2::part(button):hover {
+  stroke: rgb(0, 0, 0);
+  fill:rgb(255, 254, 254);
+}
+
+#demo2::part(button) {
+  stroke: rgb(0, 0, 0);
+  fill:rgb(255, 254, 254);
+}
+
+#demo2::part(currenttime), #demo2::part(duration) {
+  color:rgb(218, 214, 214);
+  font-weight: bold;
+  text-shadow: 0 0 3px #000000;
+}
+
+#demo2::part(path1) {
+  stroke: white;
+  stroke-width: 4px;
+}
+
+#demo2::part(path2) {
+  stroke:rgb(255, 132, 255);
+  stroke-width: 4px;
+  fill: red;
+}

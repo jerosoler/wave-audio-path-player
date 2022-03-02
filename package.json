@@ -1,0 +1,45 @@
+{
+  "name": "wave-audio-path-player",
+  "description": "Simple audio player webcomponent customizable with waveform.",
+  "author": "Jero Soler",
+  "version": "0.0.1",
+  "license": "MIT",
+  "files": ["dist"],
+  "main": "./dist/wave-audio-path-player.umd.js",
+  "module": "./dist/wave-audio-path-player.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/wave-audio-path-player.es.js",
+      "require": "./dist/wave-audio-path-player.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jerosoler/wave-audio-path-player.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jerosoler/wave-audio-path-player/issues"
+  },
+  "homepage": "https://github.com/jerosoler/wave-audio-path-player#readme",
+  "keywords": [
+    "waveform",
+    "path",
+    "svg",
+    "audio-visualizer",
+    "audio",
+    "webaudio",
+    "audio-player",
+    "music"
+  ],
+  "devDependencies": {
+    "vite": "^2.8.0"
+  },
+  "dependencies": {
+    "waveform-path": "^0.0.1"
+  }
+}
