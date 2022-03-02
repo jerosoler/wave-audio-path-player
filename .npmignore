@@ -1,3 +1,4 @@
+docs/
 src/
 node_modules/
 index.html
@@ -5,3 +6,4 @@ main.js
 vite.config.js
 style.css
 hello_world.ogg
+wave-audio-path-player.umd.js
